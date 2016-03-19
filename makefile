@@ -10,11 +10,11 @@
 # Change this line if you are using a different Fortran compiler
 COMPILER = pdflatex
 PDFCOMPILER = pdflatex
-CV = cv
+CV = RPerezTorro
 LETTER = coverLetter
 
 all: 
-	make cv
+	make cover
 cv: 
 	$(COMPILER)  $(CV).tex
 	$(COMPILER) $(CV).tex >/dev/null
