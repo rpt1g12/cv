@@ -77,7 +77,7 @@
 	{
         \begin{center}
         \begin{minipage}[c]{0.2\textwidth}
-           \includegraphics[width=\textwidth]{vortex.png}
+           \includegraphics[width=\textwidth]{myLogo.png}
         \end{minipage}
         \begin{minipage}[c]{0.4\textwidth}
         \begin{center}

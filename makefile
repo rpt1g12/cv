@@ -14,7 +14,7 @@ CV = RPerezTorro
 LETTER = coverLetter
 
 all: 
-	make cover
+	make cv
 cv: 
 	$(COMPILER)  $(CV).tex
 	$(COMPILER) $(CV).tex >/dev/null
