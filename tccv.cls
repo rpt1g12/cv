@@ -85,17 +85,27 @@
 	   {\fontfamily{pzc}\selectfont\Large {#1}}\\
         \end{center}
         \end{minipage}
-        \begin{minipage}[c]{0.3\textwidth}
+        \begin{minipage}[c]{0.33\textwidth}
 	   \normalsize{
 	   \personal
-	   []
-	   {238 Oceana Boulevard, SO14 3JG (UK)}
+	   [uk.linkedin.com/in/rperezt]
+	   {SO14 3JG (UK)}
 	   {+44 (0) 744 954 9630}
 	   {rpereztorro@gmail.com}}
         \end{minipage}
+	\begin{minipage}[c]{0.8\textwidth}
+	\bigskip
+	\section{About me}
+	Aeronautical engineerg with excellent problem-solving skills. After 3 years in the
+	research field I seek a position that enables me to develop my career within
+	industry. I believe my skills are highly transferable to any
+	technical/IT/engineering position.  Currently reside in UK but happy to move if
+	required.
+	\end{minipage}
+	\bigskip
+	\rule{0.8\textwidth}{0.4pt}
         \end{center}
 	}
-	\bigskip
     ]}
 
 % Overrides the \section command to capitalize every
