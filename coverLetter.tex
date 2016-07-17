@@ -1,13 +1,17 @@
-
 \documentclass[10pt,stdletter,dateno,sigleft]{newlfm} % Extra options: 'sigleft' for a left-aligned signature, 'stdletternofrom' to remove the from address, 'letterpaper' for US letter paper - consult the newlfm class manual for more options
 
 \renewcommand{\rmdefault}{phv} % Arial
 \renewcommand{\sfdefault}{phv} % Arial
 
 \usepackage{charter} % Use the Charter font for the document text
+\usepackage{hyperref} 
+\hypersetup{colorlinks,breaklinks,urlcolor=blue,linkcolor=blue}
 
-\newsavebox{\Luiuc}\sbox{\Luiuc}{\parbox[b]{1.75in}{\vspace{0.5in}
-\includegraphics[width=\linewidth]{myLogo.png}}} % Company/institution logo at the top left of the page
+
+\newsavebox{\Luiuc}\sbox{\Luiuc}{\parbox[b]{1.75in}{\vspace{0.2in}
+% Company/institution logo at the top left of the page
+%\includegraphics[width=0.6\linewidth]{myLogo.png}
+}}
 \makeletterhead{Uiuc}{\Lheader{\usebox{\Luiuc}}}
 
 \newlfmP{sigsize=50pt} % Slightly decrease the height of the signature field
@@ -18,11 +22,16 @@
 
 \lthUiuc % Print the company/institution logo
 
+\newenvironment{nopgbrk}
+{\par\nobreak\vfil\penalty0\vfilneg
+\vtop\bgroup}
+{\par\xdef\tpd{\the\prevdepth}\egroup
+\prevdepth=\tpd}
 %----------------------------------------------------------------------------------------
 %	YOUR NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\namefrom{Rafael P\'erez} % Name
+%\namefrom{Rafael P\'erez} % Name
 
 \addrfrom{
 \today\\[12pt] % Date
@@ -38,15 +47,17 @@ Southampton UK, SO14 3JG
 %----------------------------------------------------------------------------------------
 
 \greetto{Dear Sir or Madam,} % Greeting text
-\closeline{Yours Faithfully,} % Closing text
+%\closeline{Yours Faithfull,}
+
 
 \nameto{} % Addressee of the letter above the to address
 
 \addrto{
-Exa, \\ % To address
-Woolstone, Wick Lane\\
-Devizes, Wiltshire\\
-SN10 5DP, UK 
+Sahara Force India Formula One Team \\
+Dadford Road, Silverstone \\
+Northamptonshire, NN12 8TJ (UK)\\
+\\
+Job reference: \textbf{CFD Engineer}  
 }
 
 %----------------------------------------------------------------------------------------
@@ -58,25 +69,31 @@ SN10 5DP, UK
 %	LETTER CONTENT
 %----------------------------------------------------------------------------------------
 
-I have recently seen advertised on your website an open position for an application
-engineer for which I feel I have the appropriate set of skills.
+I am writing this letter in response to the ``CFD Engineer'' job advert on Sahara Force
+India's website for which I believe I have the appropriate set of skills. 
 
-I have had the pleasure of speaking personally with your colleague Dr~Joe~Amodeo in the
-summer of 2013 for the very same job offer. I recall getting a very good
-impression from the company but unfortunately our paths diverged and I finally took a PhD
-position in Southampton University.
+I am currently finishing (this November) a PhD on the topic of Large-Eddy-Simulations of
+wings with leading-edge modifications, and I am looking to take this further on my next
+career challenge. After finishing my MSc in Race Car Aerodynamics I felt myself prepared to take
+on a position such as the one now in consideration. However, after three years in the
+research field, not only have I enhanced my previous skills but also acquired new
+ones. A side from enhancing my knowledge, the PhD has made me more independent, being able
+to quickly find solutions to specific problems. All in all, research has expanded my
+knowledge and expertise to such an extent that I am able to meet expectations to a higher
+degree and fight for each millisecond in each lap.
 
-At the time I considered myself prepared for the job but, after 3 years experience in
-research I have acquired a solid base of knowledge in the field of CFD and I am more
-confident that I can successfully fill this position. Additionally I have developed a
-excellent customer-care skills through assisting students with their individual CFD
-projects for the past 3 years which I feel would be really beneficial in this position.
+Additionally, although the research experience has been very rewarding, I feel that due to
+my competitive character, I would much rather continue developing my career in the
+fast-paced and team-based working environment of a F1 team.
 
-Finally, I believe I could create a sense of confidence among potential customers
-as I feel I am a very friendly and approachable person.
+Thank you for your time and consideration and please feel free to contact me, or visit my
+linkedin profile (\href{https://uk.linkedin.com/in/rperezt}{uk.linkedin.com/in/rperezt})
+if you need any more details.
 
-Thank you for your time and consideration and please feel free to contact me if you need
-any more details.
+Yours Faithfully, \newline % Closing text
+\includegraphics[scale=0.6]{sgtr} \newline 
+Rafael P\'erez
+
 %----------------------------------------------------------------------------------------
 
 \end{newlfm}
