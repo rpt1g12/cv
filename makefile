@@ -11,7 +11,7 @@
 COMPILER = pdflatex
 PDFCOMPILER = pdflatex
 CV = RPerezTorro
-LETTER = coverLetter
+LETTER = RPerezTorro_CoverLetter
 
 all: 
 	make cover
