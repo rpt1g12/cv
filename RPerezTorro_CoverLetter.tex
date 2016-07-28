@@ -5,6 +5,7 @@
 
 \usepackage{charter} % Use the Charter font for the document text
 \usepackage{hyperref} 
+\usepackage{xstring} 
 \hypersetup{colorlinks,breaklinks,urlcolor=blue,linkcolor=blue}
 
 
@@ -49,17 +50,34 @@ Southampton UK, SO14 3JG
 \greetto{Dear Sir or Madam,} % Greeting text
 
 
-\newcommand{\job}{CFD R\&D Engineer}
+\newcommand{\job}{Senior Aerodynamics CFD Engineer LMP1}
 \newcommand{\jobref}{}
-\newcommand{\jobweb}{McLaren careers' website}
+\newcommand{\jobweb}{Porsche careers' website}
+
+\newcommand{\opng}[1]{
+		\IfEqCase{#1}{
+		{1}{I was excited to read about the }
+		{2}{I am writing to express my strong interest in the }
+		}
+		}
+\newcommand{\clng}[1]{
+		\IfEqCase{#1}{
+		{1}{I hope that by the end of these lines you believe as strongly as I do, that
+		I am the right fit for the position in question due to the following reasons.}
+		{2}{Given the prestige of the company I imagine you would have received
+		piles of applications. However, I believe my knowdlege and experience can
+		stand out amongst the rest.}
+		}
+		}
 
 \nameto{} % Addressee of the letter above the to address
 
 \addrto{
-McLaren Technology Centre\\
-Chertsey Road,
-Woking (Surrey),\\
-GU21 4YH (UK)\\
+Porsche Engineering Group GmbH \\
+Human Resources \\
+Porschestra{\ss}e \\
+71287 Weissach \\
+Germany
 \\
 Job reference: \textbf{\job}  
 }
@@ -74,29 +92,28 @@ Job reference: \textbf{\job}
 %----------------------------------------------------------------------------------------
 
 
-I was excited to read about the ``\job'' position recently posted on \jobweb.
-I hope that by the end of these lines you believe as strongly as I do, that I am the
-right fit for the position in question due to the following reasons.
+\opng{1} ``\job'' position recently posted on \jobweb.\clng{2}
 
-In F1 aerodynamics, managing vortical flow structures is capital. As a post-graduate
-researcher at University of Southampton I have spent the past 4 years analysing in depth
-flows of such nature. My work is about wings with an undulated leading edge, which I
-believe have been used in the past in the rear wing section of the MP4-29 to reduce drag.
-I believe that I could bring in valuable knowledge in this matter given that I have
-dedicated countless hours to its investigation.
+Having spent the past 4 years as a researcher in the field of Computational Fluid Dynamics
+has given me an extensive knowledge and expertise in the matter. On top of that, researching not
+only has strengthened my background but also my creativity and scientific capabilities.
+As a researcher I am used to deal with problems that need imaginative and
+innovative solutions.
 
 I hope you noticed in my CV that I fulfil all the necessary requirements since I used
-extensively commercial CFD packages to analyse in the past and also have experience in developing CFD
-codes in Fortran90 as well as post-processing tools both in Java and Python.
+extensively commercial CFD packages to analyse in the past and also have experience in
+developing CFD codes in Fortran90 as well as post-processing tools both in Java and
+Python. Additionally, as you can see in my CV, I also have experience in CAD surface
+modelling acquired through several projects. Amongst them I would like to highlight my
+work in the design of the Shell Eco-Marathon solar car, which you can see in my Linkedin
+profile (\href{https://uk.linkedin.com/in/rperezt}{uk.linkedin.com/in/rperezt}).
 
-Finally I would like to express that although the research experience has been very
+Finally, I would like to express that although the research experience has been very
 rewarding, I feel that due to my competitive character, I would much rather continue
-developing my career in the fast-paced and team-based working environment of a F1 team.
+developing my career in the fast-paced and team-based working environment of a LMP1 team.
 
-Thank you for your time and consideration and please feel free to contact me at any time,
-or visit my linkedin profile
-(\href{https://uk.linkedin.com/in/rperezt}{uk.linkedin.com/in/rperezt}) if you need any
-more details.
+Thank you for your time and consideration and please feel free to contact me at any time
+if you need any more details.
 
 Yours Faithfully, \newline % Closing text
 \includegraphics[scale=0.6]{sgtrBlue} \newline 
