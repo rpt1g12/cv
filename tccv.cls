@@ -96,10 +96,10 @@
 	\begin{minipage}[c]{0.8\textwidth}
 	\bigskip
 	\section{About me}
-	Aeronautical engineer with excellent problem-solving skills acquired through 3
-	years in the research field seeks for position that enables career development
-	within industry. Has highly transferable skills that any technical/IT/engineering
-	position can benefit from. Currently resides in UK but happy to move if required.
+	CFD engineer with excellent problem-solving skills acquired through 3 years in the
+	research field analysing external flows seeks for a position that enables career
+	development within the motorsport industry. Currently resides in UK but happy to move
+	if required.
 	\end{minipage}
 	\bigskip
 	\rule{0.8\textwidth}{0.4pt}
