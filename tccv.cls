@@ -96,10 +96,10 @@
 	\begin{minipage}[c]{0.8\textwidth}
 	\bigskip
 	\section{About me}
-	Aeronautical engineer with excellent problem-solving skills acquired through 3
-	years in the research field seeks for position that enables career development
-	within industry. Has highly transferable skills that any technical/IT/engineering
-	position can benefit from. Currently resides in UK but happy to move if required.
+	CFD engineer with excellent problem-solving skills acquired through 3 years in the
+	research field analysing external flows seeks for a position that enables career
+	development within the motorsport industry. Currently resides in UK but happy to move
+	if required.
 	\end{minipage}
 	\bigskip
 	\rule{0.8\textwidth}{0.4pt}
@@ -148,7 +148,7 @@
     \ifstrempty{#2}{}{\SYMBOL{45} & {#2}\smallskip\\}
     \ifstrempty{#3}{}{\SYMBOL{37} & {#3}\smallskip\\}
     \ifstrempty{#4}{}{\SYMBOL{41} & \href{mailto:#4}{#4}}
-    \ifstrempty{#1}{}{\smallskip\\ \SYMBOL{218} & \href{https://#1}{#1}}
+    \ifstrempty{#1}{}{\smallskip\\ \SYMBOL{218} & \href{http://#1}{#1}}
     \end{tabularx}}}
 
 % Every \item can be followed by one or more paragraphs
