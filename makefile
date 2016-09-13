@@ -11,7 +11,7 @@
 COMPILER = pdflatex
 PDFCOMPILER = pdflatex
 CV = RPerezTorro
-LETTER = RPerezTorro_CoverLetter
+LETTER = CoverLetter
 
 all: 
 	make cover
@@ -19,8 +19,10 @@ cv:
 	$(COMPILER)  $(CV).tex
 	$(COMPILER) $(CV).tex >/dev/null
 	$(PDFCOMPILER) $(CV).tex >/dev/null
+	pdfunite $(CV).pdf $(CV)_$(LETTER).pdf  $(CV)CV_n_$(LETTER).pdf
 cover: 
-	$(COMPILER)  $(LETTER).tex
-	$(COMPILER) $(LETTER).tex >/dev/null
-	$(PDFCOMPILER) $(LETTER).tex >/dev/null
+	$(COMPILER)  $(CV)_$(LETTER).tex
+	$(COMPILER) $(CV)_$(LETTER).tex >/dev/null
+	$(PDFCOMPILER) $(CV)_$(LETTER).tex >/dev/null
+	pdfunite $(CV).pdf $(CV)_$(LETTER).pdf  $(CV)CV_n_$(LETTER).pdf
 

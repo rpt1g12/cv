@@ -15,7 +15,7 @@
 }}
 \makeletterhead{Uiuc}{\Lheader{\usebox{\Luiuc}}}
 
-\newlfmP{sigsize=2pt} % Slightly decrease the height of the signature field
+\newlfmP{sigsize=0pt} % Slightly decrease the height of the signature field
 \newlfmP{addrfromphone} % Print a phone number under the sender's address
 \newlfmP{addrfromemail} % Print an email address under the sender's address
 \PhrPhone{Phone} % Customize the "Telephone" text
@@ -35,7 +35,8 @@
 %\namefrom{Rafael P\'erez} % Name
 
 \addrfrom{
-\today\\[12pt] % Date
+%\vspace{-15pt}
+\today\\ % Date
 238 Oceana Boulevard \\ % Address
 Southampton UK, SO14 3JG
 }
@@ -50,9 +51,9 @@ Southampton UK, SO14 3JG
 \greetto{Dear Sir or Madam,} % Greeting text
 
 
-\newcommand{\job}{PHD intership (CFD)}
+\newcommand{\job}{Aerodynamicist}
 \newcommand{\jobref}{}
-\newcommand{\jobweb}{McLaren's careers website}
+\newcommand{\jobweb}{Wirth Research website}
 
 \newcommand{\opng}[1]{
 		\IfEqCase{#1}{
@@ -70,13 +71,13 @@ Southampton UK, SO14 3JG
 		}
 		}
 
-\nameto{} % Addressee of the letter above the to address
+%\nameto{} % Addressee of the letter above the to address
 
 \addrto{
-McLaren Technology Centre\\
-Chertsey Road,
-Woking (Surrey),\\
-GU21 4YH (UK)\\
+Wirth Research Ltd\\
+Telford Road,
+Bicester (Oxfordshire),\\
+OX26 4LD (UK)\\
 \\
 Job reference: \textbf{\job}  
 }
@@ -91,13 +92,15 @@ Job reference: \textbf{\job}
 %----------------------------------------------------------------------------------------
 
 
-\opng{2} ``\job'' position in any of the slots available that has recently been posted on
-\jobweb.\clng{2}
+\opng{2} ``\job'' position that has recently been posted on
+\jobweb.\clng{1}
 
 Ever since I left my home country I have been pursuing a career in motorsports. My first
 step was to take a masters programme that gave me the specialisation and knowledge needed
-to take a CFD position in a F1 team. During that course I gained experience in the
-external aerodynamics of an open-wheel race car using CFD and wind tunnel tools. 
+to take a CFD position in the motor racing industry. During that course I gained experience in the
+external aerodynamics of an open-wheel race car using CFD and wind tunnel tools. I particularly
+became very efficient in preparing geometries for CFD since I was responsible for the
+pre-processing department of the group.
 
 Later on I took a position in Southampton University where I have spent the last 3 years
 as a researcher in the field of Computational Fluid Dynamics which has given me an
@@ -109,10 +112,10 @@ innovative solutions.
 Additionally, as you can see in my CV, I also have experience in CAD surface modelling
 acquired through several projects. Amongst them I would like to highlight my work in the
 design of the Shell Eco-Marathon solar car, which you can see in my Linkedin profile
-(\href{https://uk.linkedin.com/in/rperezt}{uk.linkedin.com/in/rperezt}).
+(\href{https://uk.linkedin.com/in/rperezt}{uk.linkedin.com/in/rperezt}). I believe that CAD is also paramount for a CFD engineer given the strong relationship between CFD and CAD departments.
 
 Finally, I would like to emphasise that you can expect from me someone that will be an
-active asset for the team and will try to learn the most out of this
+active asset for the company and will try to learn the most out of this
 unique experience from first to last day.
 
 Thank you for your time and consideration and please feel free to contact me at any time
