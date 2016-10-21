@@ -98,8 +98,7 @@
 	\section{About me}
 	CFD engineer with excellent problem-solving skills acquired through 3 years in the
 	research field analysing external flows seeks for a position that enables career
-	development within the motorsport industry. Currently resides in UK but happy to move
-	if required.
+	development. Currently resides in UK but happy to move if required.
 	\end{minipage}
 	\bigskip
 	\rule{0.8\textwidth}{0.4pt}
