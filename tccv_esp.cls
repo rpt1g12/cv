@@ -96,7 +96,7 @@
 	\begin{minipage}[c]{0.8\textwidth}
 	\bigskip
 	\section{Qui\'en soy?}
-	Ingeniero aeron\'autico con m\'as de 3 a\~{n}os de experiencia en Fluido Din\'amica Computacional (CFD), conocimento avanzado de modelado 3D y capaz de programar en varios lenguajes de programaci\'on.
+	Ingeniero aeron\'autico con m\'as de 3 a\~{n}os de experiencia en Fluido Din\'amica Computacional (CFD) de alta fidelidad, conocimento avanzado de modelado 3D y capaz de programar en varios lenguajes de programaci\'on.
 	\end{minipage}
 	\bigskip
 	\rule{0.8\textwidth}{0.4pt}
