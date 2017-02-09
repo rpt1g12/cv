@@ -14,13 +14,23 @@ CV = RPerezTorro
 LETTER = RPerezTorro_CoverLetter
 
 all: 
+	#make cv_esp
+	#make cv
 	make cover
+	#make cover_esp
 cv: 
 	$(COMPILER)  $(CV).tex
 	$(COMPILER) $(CV).tex >/dev/null
 	$(PDFCOMPILER) $(CV).tex >/dev/null
+cv_esp: 
+	$(COMPILER)  $(CV)_esp.tex
+	$(COMPILER) $(CV)_esp.tex >/dev/null
+	$(PDFCOMPILER) $(CV)_esp.tex >/dev/null
 cover: 
 	$(COMPILER)  $(LETTER).tex
 	$(COMPILER) $(LETTER).tex >/dev/null
 	$(PDFCOMPILER) $(LETTER).tex >/dev/null
-
+cover_esp: 
+	$(COMPILER)  $(LETTER)_esp.tex
+	$(COMPILER) $(LETTER)_esp.tex >/dev/null
+	$(PDFCOMPILER) $(LETTER)_esp.tex >/dev/null

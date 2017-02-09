@@ -63,7 +63,7 @@
 \pagestyle{empty}
 \setlength\parindent{0pt}
 \color[HTML]{303030} % Default foreground color
-\definecolor{link}{HTML}{506060} % Hyperlinks
+\definecolor{link}{HTML}{2B648D} % Hyperlinks
 \hypersetup{colorlinks,breaklinks,urlcolor=link,linkcolor=link}
 \setkomafont{disposition}{\color[HTML]{801010}}
 \setkomafont{section}{\scshape\Large\mdseries}
@@ -96,10 +96,9 @@
 	\begin{minipage}[c]{0.8\textwidth}
 	\bigskip
 	\section{About me}
-	Aeronautical engineer with excellent problem-solving skills acquired through 3
-	years in the research field seeks for position that enables career development
-	within industry. Has highly transferable skills that any technical/IT/engineering
-	position can benefit from. Currently resides in UK but happy to move if required.
+	Aeronautical engineer with excellent problem-solving skills, more than 3 years
+	experience using high fidelity CFD, advanced knowledge of CAD software and
+	coding in several programming languages.  
 	\end{minipage}
 	\bigskip
 	\rule{0.8\textwidth}{0.4pt}

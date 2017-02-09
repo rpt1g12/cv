@@ -1,10 +1,11 @@
-\documentclass[10pt,stdletter,dateno,sigleft]{newlfm} % Extra options: 'sigleft' for a left-aligned signature, 'stdletternofrom' to remove the from address, 'letterpaper' for US letter paper - consult the newlfm class manual for more options
+\documentclass[11pt,stdletter,dateno,sigleft]{newlfm} % Extra options: 'sigleft' for a left-aligned signature, 'stdletternofrom' to remove the from address, 'letterpaper' for US letter paper - consult the newlfm class manual for more options
 
 \renewcommand{\rmdefault}{phv} % Arial
 \renewcommand{\sfdefault}{phv} % Arial
 
 \usepackage{charter} % Use the Charter font for the document text
 \usepackage{hyperref} 
+\usepackage{xstring} 
 \hypersetup{colorlinks,breaklinks,urlcolor=blue,linkcolor=blue}
 
 
@@ -14,7 +15,7 @@
 }}
 \makeletterhead{Uiuc}{\Lheader{\usebox{\Luiuc}}}
 
-\newlfmP{sigsize=50pt} % Slightly decrease the height of the signature field
+\newlfmP{sigsize=0pt} % Slightly decrease the height of the signature field
 \newlfmP{addrfromphone} % Print a phone number under the sender's address
 \newlfmP{addrfromemail} % Print an email address under the sender's address
 \PhrPhone{Phone} % Customize the "Telephone" text
@@ -34,7 +35,8 @@
 %\namefrom{Rafael P\'erez} % Name
 
 \addrfrom{
-\today\\[12pt] % Date
+%\vspace{-15pt}
+\today\\ % Date
 238 Oceana Boulevard \\ % Address
 Southampton UK, SO14 3JG
 }
@@ -50,10 +52,27 @@ Southampton UK, SO14 3JG
 
 
 \newcommand{\job}{CFD R\&D Engineer}
-\newcommand{\jobref}{}
+\newcommand{\jobref}{\job}
 \newcommand{\jobweb}{McLaren careers' website}
 
-\nameto{} % Addressee of the letter above the to address
+\newcommand{\opng}[1]{
+		\IfEqCase{#1}{
+		{1}{I was excited to read about the }
+		{2}{I am writing to express my strong interest in the }
+		}
+		}
+\newcommand{\clng}[1]{
+		\IfEqCase{#1}{
+		{1}{I hope that by the end of this letter you believe as strongly as I do,
+		that I am the right fit for the position in question for the following
+		reasons:}
+		{2}{Given the prestige of the company I imagine you would have received
+		piles of applications. However, I believe my experience, knowledge and
+		ambition can stand out amongst the rest.}
+		}
+		}
+
+%\nameto{} % Addressee of the letter above the to address
 
 \addrto{
 McLaren Technology Centre\\
@@ -61,7 +80,7 @@ Chertsey Road,
 Woking (Surrey),\\
 GU21 4YH (UK)\\
 \\
-Job reference: \textbf{\job}  
+Job reference: \textbf{\jobref}  
 }
 
 %----------------------------------------------------------------------------------------
@@ -74,32 +93,17 @@ Job reference: \textbf{\job}
 %----------------------------------------------------------------------------------------
 
 
-I was excited to read about the ``\job'' position recently posted on \jobweb.
-I hope that by the end of these lines you believe as strongly as I do, that I am the
-right fit for the position in question due to the following reasons.
+\opng{2} ``\job'' position that has recently been posted on \jobweb .\clng{2}
 
-In F1 aerodynamics, managing vortical flow structures is capital. As a post-graduate
-researcher at University of Southampton I have spent the past 4 years analysing in depth
-flows of such nature. My work is about wings with an undulated leading edge, which I
-believe have been used in the past in the rear wing section of the MP4-29 to reduce drag.
-I believe that I could bring in valuable knowledge in this matter given that I have
-dedicated countless hours to its investigation.
+I am really glad to see that McLaren is advertising a role that not only fits my academic profile perfectly but it is also something that I have enjoyed doing in the past. During my MSc I was accountable for the whole CFD workflow in a project that aimed to improve the aerodynamic performance of a F1-type race car. This role combined my three big passions: Race Cars, Aerodynamics and Computers. As a computer enthusiast, I enjoy coding and developing so linking the CFD solver (STAR-CCM+) with CAD (SolidWorks) and an optimisation code (Matlab) using Java and VisualBasic scripts proved to be both challenging and rewarding at the same time.
 
-I hope you noticed in my CV that I fulfil all the necessary requirements since I used
-extensively commercial CFD packages to analyse in the past and also have experience in developing CFD
-codes in Fortran90 as well as post-processing tools both in Java and Python.
-
-Finally I would like to express that although the research experience has been very
-rewarding, I feel that due to my competitive character, I would much rather continue
-developing my career in the fast-paced and team-based working environment of a F1 team.
+I am also experienced in writing high quality technical reports and presenting in front of wide audiences as shown in the Publications \& Conferences section of my CV. And finally, although unfortunately I have not been able to work with it in the recent years, I also have some experience using CAD packages which you can check by visiting my linkedin profile (\href{https://uk.linkedin.com/in/rperezt}{uk.linkedin.com/in/rperezt}).
 
 Thank you for your time and consideration and please feel free to contact me at any time,
-or visit my linkedin profile
-(\href{https://uk.linkedin.com/in/rperezt}{uk.linkedin.com/in/rperezt}) if you need any
-more details.
+if you need any more details. I look forward to your reply.
 
 Yours Faithfully, \newline % Closing text
-\includegraphics[scale=0.6]{sgtrBlue} \newline 
+\includegraphics[scale=0.7]{sgtrBlue} \newline 
 Rafael P\'erez
 
 %----------------------------------------------------------------------------------------
