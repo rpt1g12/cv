@@ -33,6 +33,7 @@
 \RequirePackage[hmargin=1.25cm,vmargin=1.25cm,twocolumn,columnsep=0.5cm]{geometry}
 \RequirePackage{bookman,etoolbox,needspace,pifont,tabularx,xcolor}
 \RequirePackage{hyperref}
+\RequirePackage{marvosym}
 
 % Capitalize words of at least a minimum length (default to 3 chars).
 % The text is capitalized before being expanded.
@@ -89,9 +90,10 @@
 	   \normalsize{
 	   \personal
 	   [uk.linkedin.com/in/rperezt]
-	   {SO14 3JG (UK)}
-	   {+44 (0) 744 954 9630}
-	   {rpereztorro@gmail.com}}
+	   {03801 Alcoy (SPAIN)}
+	   {+34 96 652 58 95}
+	   {rpereztorro@gmail.com}
+	   {+44 (0) 744 954 9630}}
         \end{minipage}
 	\begin{minipage}[c]{0.8\textwidth}
 	\bigskip
@@ -137,7 +139,7 @@
 %         {address}
 %         {phone number}
 %         {email}
-\newcommand\personal[4][]{%
+\newcommand\personal[5][]{%
     \newcommand\SYMBOL[1]{\raisebox{-2pt}{\Large\ding{##1}}}%
     \needspace{0.5\textheight}%
     \newdimen\boxwidth%
@@ -146,6 +148,7 @@
     \begin{tabularx}{\boxwidth}{c|X}
     \ifstrempty{#2}{}{\SYMBOL{45} & {#2}\smallskip\\}
     \ifstrempty{#3}{}{\SYMBOL{37} & {#3}\smallskip\\}
+    \ifstrempty{#5}{}{\Mobilefone & {#5}\smallskip\\}
     \ifstrempty{#4}{}{\SYMBOL{41} & \href{mailto:#4}{#4}}
     \ifstrempty{#1}{}{\smallskip\\ \SYMBOL{218} & \href{http://#1}{#1}}
     \end{tabularx}}}
