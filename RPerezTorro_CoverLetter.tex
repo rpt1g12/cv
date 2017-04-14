@@ -1,4 +1,4 @@
-\documentclass[10pt,stdletter,dateno,sigleft]{newlfm} % Extra options: 'sigleft' for a left-aligned signature, 'stdletternofrom' to remove the from address, 'letterpaper' for US letter paper - consult the newlfm class manual for more options
+\documentclass[11pt,stdletter,dateno,sigleft]{newlfm} % Extra options: 'sigleft' for a left-aligned signature, 'stdletternofrom' to remove the from address, 'letterpaper' for US letter paper - consult the newlfm class manual for more options
 
 \renewcommand{\rmdefault}{phv} % Arial
 \renewcommand{\sfdefault}{phv} % Arial
@@ -37,8 +37,13 @@
 \addrfrom{
 %\vspace{-15pt}
 \today\\ % Date
+<<<<<<< HEAD
 238 Oceana Boulevard \\ % Address
 Southampton UK, SO14 3JG
+=======
+11 Howgate Rd \\ % Address
+London UK, SW14 8NQ
+>>>>>>> Safran_Soufflantes
 }
 
 \phonefrom{+44 (0) 744 954 9630} % Phone number
@@ -51,9 +56,16 @@ Southampton UK, SO14 3JG
 \greetto{Dear Sir or Madam,} % Greeting text
 
 
+<<<<<<< HEAD
 \newcommand{\job}{Aerodynamicist}
 \newcommand{\jobref}{}
 \newcommand{\jobweb}{Wirth Research website}
+=======
+\newcommand{\job}{Ing\'enieur conception a\'erodynamique des soufflantes R\&T H/F}
+\newcommand{\jobref}{D2016RR11-20339-50336}
+\newcommand{\company}{Safran }
+\newcommand{\jobweb}{\company careers' website}
+>>>>>>> Safran_Soufflantes
 
 \newcommand{\opng}[1]{
 		\IfEqCase{#1}{
@@ -63,23 +75,38 @@ Southampton UK, SO14 3JG
 		}
 \newcommand{\clng}[1]{
 		\IfEqCase{#1}{
+<<<<<<< HEAD
 		{1}{I hope that by the end of these lines you believe as strongly as I do, that
 		I am the right fit for the position in question due to the following reasons.}
 		{2}{Given the prestige of the company I imagine you would have received
 		piles of applications. However, I believe my experience, knowledge and
 		ambition can stand out amongst the rest.}
+=======
+		{1}{I hope that by the end of this letter you believe as strongly as I do,
+		that I am the right fit for the position in question for the following
+		reasons:}
+		{2}{Given the prestige of the company I imagine you would have received
+		many applications. However, I believe my experience, knowledge and
+		ambition can stand out among the rest.}
+>>>>>>> Safran_Soufflantes
 		}
 		}
 
 %\nameto{} % Addressee of the letter above the to address
 
 \addrto{
+<<<<<<< HEAD
 Wirth Research Ltd\\
 Telford Road,
 Bicester (Oxfordshire),\\
 OX26 4LD (UK)\\
+=======
+Safran\\
+2, Boulevard du G\'en\'eral Martial Valin,\\
+75724 Paris Cedex 15 (FRANCE)\\
+>>>>>>> Safran_Soufflantes
 \\
-Job reference: \textbf{\job}  
+Job reference: \textbf{\jobref}  
 }
 
 %----------------------------------------------------------------------------------------
@@ -92,6 +119,7 @@ Job reference: \textbf{\job}
 %----------------------------------------------------------------------------------------
 
 
+<<<<<<< HEAD
 \opng{2} ``\job'' position that has recently been posted on
 \jobweb.\clng{1}
 
@@ -120,6 +148,16 @@ unique experience from first to last day.
 
 Thank you for your time and consideration and please feel free to contact me at any time
 if you need any more details. I am looking forward to your reply.
+=======
+\opng{1} ``\job'' position that has recently been posted on \jobweb .\clng{2}
+
+The role that \company is advertising not only fits my academic profile perfectly but it is also something that I have enjoyed doing in the past. For the past three and a half years I have been analysing the aerodynamic characteristics of wing profiles. In particular, I have been investigating the effect of leading edge shape modifications on the unsteady behaviour of a stalled wing by means of high fidelity CFD methods. However, I am also familiar with running tests on wind tunnel facilities and taking force-balance measurements. Besides, although unfortunately I have not been able to work with it in the recent years, I also have some experience using CAD packages which you can check by visiting my linkedin profile (\href{https://uk.linkedin.com/in/rperezt}{uk.linkedin.com/in/rperezt}).
+
+I am also experienced in analysing and post-processing complex 3D unsteady flows and writing high quality technical reports as shown in the Publications \& Conferences section of my CV. As a final point, although my level of French is not as good as my English or Spanish, I see this as a very exciting opportunity to increase my language skills at the same time that I gain new technical insights in other engineering fields. 
+
+Thank you for your time and consideration and please feel free to contact me at any time,
+if you need further details. I look forward to your reply.
+>>>>>>> Safran_Soufflantes
 
 Yours Faithfully, \newline % Closing text
 \includegraphics[scale=0.7]{sgtrBlue} \newline 
