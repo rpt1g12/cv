@@ -15,8 +15,8 @@ LETTER = CoverLetter
 
 all: 
 	#make cv_esp
-	make cv
-	#make cover
+	#make cv
+	make cover
 	#make cover_esp
 cv: 
 	$(COMPILER)  $(CV).tex
@@ -29,12 +29,12 @@ cv_esp:
 	$(PDFCOMPILER) $(CV)_esp.tex >/dev/null
 	pdfunite $(CV).pdf $(CV)_$(LETTER).pdf  $(CV)_esp_CV_n_$(LETTER)_esp.pdf
 cover: 
-	$(COMPILER)  $(LETTER).tex
-	$(COMPILER) $(LETTER).tex >/dev/null
-	$(PDFCOMPILER) $(LETTER).tex >/dev/null
+	$(COMPILER)  $(CV)_$(LETTER).tex
+	$(COMPILER) $(CV)_$(LETTER).tex >/dev/null
+	$(PDFCOMPILER) $(CV)_$(LETTER).tex >/dev/null
 	pdfunite $(CV).pdf $(CV)_$(LETTER).pdf  $(CV)CV_n_$(LETTER).pdf
 cover_esp: 
-	$(COMPILER)  $(LETTER)_esp.tex
-	$(COMPILER) $(LETTER)_esp.tex >/dev/null
-	$(PDFCOMPILER) $(LETTER)_esp.tex >/dev/null
+	$(COMPILER)  $(CV)_$(LETTER)_esp.tex
+	$(COMPILER) $(CV)_$(LETTER)_esp.tex >/dev/null
+	$(PDFCOMPILER) $(CV)_$(LETTER)_esp.tex >/dev/null
 	pdfunite $(CV).pdf $(CV)_$(LETTER).pdf  $(CV)_esp_CV_n_$(LETTER)_esp.pdf
