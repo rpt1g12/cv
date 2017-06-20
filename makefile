@@ -15,8 +15,8 @@ LETTER = CoverLetter
 
 all: 
 	#make cv_esp
-	#make cv
-	make cover
+	make cv
+	#make cover
 	#make cover_esp
 cv: 
 	$(COMPILER)  $(CV).tex
