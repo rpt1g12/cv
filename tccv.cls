@@ -98,8 +98,8 @@
 	\begin{minipage}[c]{0.8\textwidth}
 	\bigskip
 	\section{About me}
-	Aeronautical engineer with excellent problem-solving skills, more than 3 years
-	experience using high fidelity CFD, advanced knowledge of CAD software and
+	Aerospace engineer with excellent problem-solving skills, more than 3 years
+	experience using high numerical simulations, advanced knowledge of CAD software and
 	coding in several programming languages.  
 	\end{minipage}
 	\bigskip
