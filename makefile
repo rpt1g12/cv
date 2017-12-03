@@ -18,7 +18,7 @@ all:
 	#make cv_esp
 	#make cv
 	make formal
-	#make cover
+	make cover
 	#make cover_esp
 cv: 
 	$(COMPILER)  $(CV).tex
