@@ -11,11 +11,13 @@
 COMPILER = pdflatex
 PDFCOMPILER = pdflatex
 CV = RPerezTorro
+FORMAL = RPerezTorroCV
 LETTER = RPerezTorro_CoverLetter
 
 all: 
-	make cv_esp
+	#make cv_esp
 	#make cv
+	make formal
 	#make cover
 	#make cover_esp
 cv: 
@@ -34,3 +36,7 @@ cover_esp:
 	$(COMPILER)  $(LETTER)_esp.tex
 	$(COMPILER) $(LETTER)_esp.tex >/dev/null
 	$(PDFCOMPILER) $(LETTER)_esp.tex >/dev/null
+formal:
+	$(COMPILER)  $(FORMAL).tex
+	$(COMPILER) $(FORMAL).tex >/dev/null
+	$(PDFCOMPILER) $(FORMAL).tex >/dev/null

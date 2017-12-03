@@ -1,0 +1,235 @@
+%
+% LaTeX source of my resume
+% =========================
+%
+% Heavily commented to to fit even LaTeX beginners (hopefully).
+%
+% See the `README.md` file for more info.
+%
+% This file is licensed under the CC-NC-ND Creative Commons license.
+%
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.75in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+
+
+
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+\maintitle{Rafael P\'erez-Torr\'o}{April 04, 1989}{Last update on \today}
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:rpereztorro@gmail.com}{rpereztorro@gmail.com}\sbull
++49 15117518095\sbull
++34 611411155\sbull
+\href{https://www.linkedin.com/in/rperezt/}{www.linkedin.com/in/rperezt}
+\\
+23 Bachwiesen Stra\ss{e}\sbull
+70199\sbull
+Stuttgart\sbull
+Germany
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{SUMMARY}  % a root section title
+
+\vspace{-3pt}  % some vertical spacing
+\noindent \emph{Aeronautical engineer with excellent problem-solving skills, 4 years experience using high fidelity CFD, advanced knowledge of CAD software, coding in several programming languages and comfortable in public speach situations.}
+\vspace{5pt}  % some vertical spacing
+\spacedhrule{0em}{-0.4em}
+
+\roottitle{EXPERIENCE}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{https://www.p3-group.com/}{P3-SYSTEMS}}
+  {\textsc{Stuttgart, Germany}} {%
+  \headedsubsection{TEST ENGINEER}{Sept. 2017 -- Present}
+  {\bodytext{P3-Systems is a subsidiary of P3-Group which provides testing services for telematics and electronic systems for the automotive industry since 2006. Based in the Stuttgart's test-house, I was part of the Test-Automation team and provided automatic-test-simulations and defect analysis on a daily basis for multimedia boxes to be installed in Mercedes-Benz cars. \\
+  \textbf{Main Duties and highlights:} 
+    \begin{itemize}
+    	\item Prepare highly-intense testing simulations in order to find hardware and software malfunctions
+	\item Analyse simulations and upload newly-found defects to the client's database
+	\item CAN bus signal analysis
+	\item Agile project management
+	\item VisualBasic scripting
+	\item Fast-paced working environment
+    \end{itemize}
+    }}
+}
+
+\headedsection
+  {\href{https://www.southampton.ac.uk}{University of Southampton}}
+  {\textsc{Southampton, United Kingdom}} {%
+  \headedsubsection
+    {POST-GRADUATE RESEARCHER}
+    {Nov. 2013 -- Nov. 2017}
+    {\bodytext{Investigate the effect of wing shape modifications on the aerodynamic and aeroacoustic performance by means of High-Order Computational Fluid Dynamics (CFD) tools.\\
+    \textbf{Main duties and highlights:} 
+    \begin{itemize}
+    	\item Development of Partial Differential Equation (PDE) solvers using \texttt{Fortran90}
+	\item Massive Parallelisation programming with MPI libraries
+	\item Development of Structured-grid-generators using \texttt{Fortran90} 
+	\item Development of Post-Processing tools in \texttt{Fortran90}, \texttt{Python} and \texttt{Matlab} 
+	\item Version Control using GIT
+	\item Parallel Post-Processing of large data sets, $\mathcal{O}(TByte)$ 
+	\item Stability analysis
+	\item Analysis of physical features using BigData tools (Dimensionality Reduction, Dynamic Mode Decomposition, etc.)
+	\item Signal analysis in frequency and time domains
+	\item High-quality scientific publications (see Publications section below)
+	\item Present results in front of large audiences
+    \end{itemize}
+    }}
+  \headedsubsection
+    {TEACHING ASSISTANT}
+    {Nov. 2013 -- Jan. 2017}
+    {\bodytext{Teach Computational Fluid Dynamics, aerodynamics and Wind Tunnel Testing.\\
+    \textbf{Main duties and highlights:} 
+    \begin{itemize}
+	\item Teaching basics of CFD and numerical methods
+	\item Leading tutorial sessions for ANSYS-Fluent and Star-CCM+
+	\item Leading Wind Tunnel Testing sessions 
+	\item Provide CFD advise for final-year-degree projects for students across the engineering spectrum
+    \end{itemize}
+    }}
+}
+
+\spacedhrule{2pt}{2pt}
+
+\roottitle{EDUCATION}
+
+\headedsection
+  {\href{https://www.southampton.ac.uk}{University of Southampton}}
+  {\textsc{Southampton, United Kingdom}} {%
+  \headedsubsection
+    {PhD. in Computational Fluid Dynamics}
+    {Nov. 2013 -- Nov. 2017}{}}
+
+\headedsection
+  {\href{https://www.southampton.ac.uk}{University of Southampton}}
+  {\textsc{Southampton, United Kingdom}} {%
+  \headedsubsection
+    {MSc. in Race Car Aerodynamics}
+    {Sep. 2012 -- Sep. 2013}{}}
+
+\headedsection
+  {\href{https://www.euita.upm.es}{Universidad Polit\'ecnica de Madrid}}
+  {\textsc{Madrid, Spain}} {%
+  \headedsubsection
+    {BEng. in Aeronautics}
+    {Sep. 2007 -- Jun. 2012}{}}
+
+\spacedhrule{20pt}{2pt}
+
+\roottitle{PROJECTS}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{https://www.southampton.ac.uk}{University of Southampton}}
+  {\textsc{Southampton, United Kingdom}} {%
+  \headedsubsection{Race Car Design}{Sept. 2012 -- May 2013}
+  {\bodytext{Design of an open-wheel race car using \texttt{Star-CCM+} and \texttt{SolidWorks}. The project includes an optimisation procedure which connects \texttt{Matlab}, \texttt{SolidWorks}, and \texttt{Star-CCM+} to perform a fully automated optimisation of the front-wing-element's relative position based on Surrogate Modelling that led to a 30\% improvement of the aerodynamic efficiency.\\
+  \textbf{Main Duties and highlights:} 
+    \begin{itemize}
+	\item 3-D meshing
+	\item CFD set-up, post-process and analysis
+    	\item Pipe-lining for CAD-CFD-OPTIMISATION interaction using \texttt{VisualBasic}, \texttt{BASH}, and \texttt{Java} scripts
+	\item Parametric design using \texttt{SolidWorks} with geometric restrictions
+	\item Surrogate modelling using Kriging
+	\item Variable space exploration using Latin-Hypercube sampling
+    \end{itemize}
+    }}
+}
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{https://www.euita.upm.es}{Universidad Polit\'ecnica de Madrid}}
+  {\textsc{Madrid, Spain}} {%
+  \headedsubsection{Solar Car Prototype Design}{Sept. 2011 -- Jun. 2012}
+  {\bodytext{Design of a solar car prototype using \texttt{ANSYS-Fluent} and \texttt{CatiaV5} that participated in the \href{http://www.shell.com/energy-and-innovation/shell-ecomarathon.html}{Shell Eco-Marathon}.\\
+  \textbf{Main Duties and highlights:} 
+    \begin{itemize}
+	\item 3-D meshing
+	\item CFD set-up, post-process and analysis
+	\item Parametric design using \texttt{CatiaV5} with geometric restrictions
+	\item Preparation of blueprints for molds production
+    \end{itemize}
+    }}
+}
+
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{SKILLS}
+
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {Programming:}
+  {Fortran90, Python, C++, VisualBasic, Bash, Unix, Java, \LaTeX}
+\vspace{0.5em}
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {Parallel Programing:}
+  {MPI, OpenMP, MPI-IO}
+\vspace{0.5em}
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {CAD:}
+  {CatiaV5, SolidWorks}
+\vspace{0.5em}
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {CFD:}
+  {ANSYS-Fluent, Star-CCM+, OpenFOAM}
+\vspace{0.5em}
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {Meshing:}
+  {ANSYS-Mesh, Gambit, PointWise, ICEM-CFD}
+\vspace{0.5em}
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {Version Control:}
+  {GIT}
+\vspace{0.5em}
+\inlineheadsection
+  {Languages:}
+  {Spanish (Mother Tongue), Catalan (Mother Tongue), English (Proficient),\\ French (Basic), German (Very Basic)}
+\vspace{0.5em}
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {Other:}
+  {MS-Office, Agile}
+\vspace{0.5em}
+
+
+\spacedhrule{1.6em}{-0.4em}
+
+\roottitle{PUBLICATIONS \& CONFERENCES}
+\begin{itemize}
+\item \textbf{A large-eddy simulation on a deep-stalled aerofoil with a wavy leading edge}. J. Fluid Mech. 813. \href{https://doi.org/10.1017/jfm.2016.841}{doi: 10.1017/jfm.2016.841}.
+\item \textbf{Flow characteristics of infinite-span wings with wavy leading edges}. $69^{th}$ APS DFD Meeting, November 2016, Portland (USA). 
+\item \textbf{Flow characteristics of deep stalled aerofoils with a wavy
+leading edge}. UK Fluids Conference, September 2016, London (UK). 
+\item \textbf{Large-eddy simulations of a stalled NACA0021 with a wavy
+leading edge}. UKTC Annual Meeting, September 2016, Cambridge (UK).
+\end{itemize}
+
+\spacedhrule{1.6em}{-0.4em}
+\roottitle{AWARDS}
+\begin{itemize}
+	\item The Timothy Nickels Prize for best oral presentation on 2016 UKTC Annual Meeting	
+\end{itemize}
+
+\end{document}
+
+＀
