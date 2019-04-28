@@ -13,6 +13,7 @@ PDFCOMPILER = pdflatex
 CV = RPerezTorro
 FORMAL = RPerezTorroCV
 LETTER = RPerezTorro_CoverLetter
+RESIG = resignation_letter
 
 all: 
 	#make cv_esp
@@ -40,3 +41,7 @@ formal:
 	$(COMPILER)  $(FORMAL).tex
 	$(COMPILER) $(FORMAL).tex >/dev/null
 	$(PDFCOMPILER) $(FORMAL).tex >/dev/null
+resig:
+	$(COMPILER)  $(RESIG).tex
+	$(COMPILER) $(RESIG).tex >/dev/null
+	$(PDFCOMPILER) $(RESIG).tex >/dev/null

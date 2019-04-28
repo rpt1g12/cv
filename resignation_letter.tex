@@ -1,0 +1,62 @@
+\documentclass[12pt,stdletter,dateno,sigleft]{newlfm} % Extra options: 'sigleft' for a left-aligned signature, 'stdletternofrom' to remove the from address, 'letterpaper' for US letter paper - consult the newlfm class manual for more options
+
+\renewcommand{\rmdefault}{phv} % Arial
+\renewcommand{\sfdefault}{phv} % Arial
+
+\usepackage{charter} % Use the Charter font for the document text
+\usepackage{hyperref} 
+\usepackage{xstring} 
+\hypersetup{colorlinks,breaklinks,urlcolor=blue,linkcolor=blue}
+
+
+\newsavebox{\Luiuc}\sbox{\Luiuc}{\parbox[b]{1.75in}{\vspace{0.2in}
+% Company/institution logo at the top left of the page
+%\includegraphics[width=0.6\linewidth]{myLogo.png}
+}}
+\makeletterhead{Uiuc}{\Lheader{\usebox{\Luiuc}}}
+
+\newlfmP{sigsize=0pt} % Slightly decrease the height of the signature field
+\newlfmP{addrfromphone} % Print a phone number under the sender's address
+\newlfmP{addrfromemail} % Print an email address under the sender's address
+\PhrPhone{Phone} % Customize the "Telephone" text
+\PhrEmail{Email} % Customize the "E-mail" text
+
+\lthUiuc % Print the company/institution logo
+
+\newenvironment{nopgbrk}
+{\par\nobreak\vfil\penalty0\vfilneg
+\vtop\bgroup}
+{\par\xdef\tpd{\the\prevdepth}\egroup
+\prevdepth=\tpd}
+
+\namefrom{Rafael P\'erez-Torr\'o\\
+(Pass. No: PAE895302)} % Name
+\addrfrom{
+\today\\ % Date
+21 J{\"a}gersruh \\ % Address
+28126 Braunschweig, Germany
+}
+
+\phonefrom{+49  1511 7518095} % Phone number
+\emailfrom{rpereztorro@gmail.com} % Email address
+
+\greetto{Dear P3-Systems HR team,} % Greeting text
+\nameto{P3-Systems GmbH} % Addressee of the letter above the to address
+\addrto{Heilbronner Str. 86\\
+	70191 Stuttgart, Germany}
+
+\begin{document}
+\begin{newlfm}
+
+I would like to inform you that I, Rafael P\'erez-Torr\'o, am resigning from my position as Test Engineer for the P3-Systems company, effective July 1, 2019.
+
+Thank you for the support, opportunities and trust that you have provided me during the last years. I have truly enjoyed my tenure with P3-Systems, and am more than grateful for the encouragement you have given me in pursuing my professional and personal growth objectives.
+
+If I can be of any assistance during this transition in order to facilitate the seamless passing of my responsibilities to my successor, please let me know. I would be glad to help however I can.
+
+Yours faithfully, \newline\newline % Closing text
+%\includegraphics[scale=1.0]{sgtrBlue} \newline 
+
+
+\end{newlfm}
+\end{document}
